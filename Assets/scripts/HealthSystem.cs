@@ -1,0 +1,97 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using NaughtyCharacter;
+
+// Handles the players health and attacking.
+
+public class HealthSystem : MonoBehaviour
+{
+    public float health;
+    public Animator healthBar;
+    public Animator fade;
+
+    public KeyCode key;
+    private Animator player;
+    public GameObject weapon;
+    public bool attacking;
+
+    private void Awake()
+    {
+        player = GetComponent<Animator>();
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+
+        // Handles players health on collision with
+        // and enemy when not attacking.
+
+        if (col.tag == "enemy" && health > 0 && attacking == false)
+        {
+            if (health > 0)
+            {
+                // Health subtraction.
+                health -= 1;
+                healthBar.SetTrigger("loss");
+            }
+
+            if (health == 0)
+            {
+                // Dies when at 0 health.
+                death();
+            }
+        }
+
+        if (col.tag == "healthpickup" && health < 3)
+        {
+            //Health Restoration.
+            health += 1;
+            healthBar.SetTrigger("regen");
+        }
+
+        if (col.tag == "death")
+        {
+            // Instant death collider.
+            death();
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("x"))
+        {
+            // Press "x" to commit suicide.
+            death();
+        }
+
+        if (Input.GetKeyDown(key) && attacking == false)
+        {
+            // Press the "key" KeyCode to attack.
+            player.SetTrigger("Attack");
+        }
+    }
+
+    public void death()
+    {
+        // Triggers fadeout animation upon death.
+        fade.SetTrigger("fadeout");
+        Debug.Log("death");
+
+    }
+
+    public void MeleeAttackStart()
+    {
+        // Begin Melee Attack.
+        attacking = true;
+        weapon.SetActive(true);
+    }
+
+    public void MeleeAttackEnd()
+    {
+        // End Melee Attack.
+        attacking = false;
+        weapon.SetActive(false);
+    }
+
+}
