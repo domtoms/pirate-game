@@ -1,2 +1,2 @@
 # pirate-game
-pirates in space
+Unity project for Treasure of the Seven Skies.
