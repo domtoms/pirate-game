@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Sets the players coordinates a the "spawn" Vector3
 // when the scene begins.
@@ -14,6 +12,8 @@ public class Checkpoint : MonoBehaviour
 
     void Awake()
     {
+        // Moves the players coordinates.
+
         Debug.Log("reset");
 
         player = GameObject.Find("Ellen");

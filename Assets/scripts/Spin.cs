@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // This script just makes GameObjects spin at the speed
 // defined in the "speedX", "speedY" and "speedZ" floats.
@@ -13,6 +11,7 @@ public class Spin : MonoBehaviour {
     
     void Update()
     {
+
         transform.Rotate(new Vector3(speedX, speedY, speedZ) * Time.deltaTime);
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Sets the players spawn coordinates to the "checkpoint"
 // Vector3 when they collide with the checkpoint trigger.

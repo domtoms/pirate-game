@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 // Displays the level name when the cursor hovers
-// over the level hitbox and activates the level
+// over the level hitbox and begins the level
 // upon click.
 
 public class ClickOnLevel : MonoBehaviour

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // This script fades to a designated scene when a
@@ -10,20 +8,14 @@ public class KeySceneChange : MonoBehaviour {
 
     public string levelName;
     public Animator animator;
-    public KeyCode key;
-    public bool AnyKey;
+    public bool anyKey;
 
     void Update() {
 
         // Triggers the "FadeToScene" void when
-        // the "key" KeyCode is pressed.
+        // any key is pressed.
 
-        if (AnyKey == false && Input.GetKeyDown(key))
-        {
-            FadeToScene(1);
-        }
-
-        if (AnyKey == true && Input.anyKey)
+        if (anyKey == true && Input.anyKey)
         {
             FadeToScene(1);
         }

@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using NaughtyCharacter;
 
-// Brings up pause menu when the "key" KeyCode
-// is pressed.
+// Brings up pause menu when "key" is pressed.
 
 public class Pause : MonoBehaviour
 {
@@ -12,7 +9,6 @@ public class Pause : MonoBehaviour
     public KeyCode key;
     public GameObject pauseMenu;
     public GameObject player;
-
 
     void Update()
     {

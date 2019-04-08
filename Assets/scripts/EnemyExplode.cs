@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Plays the enemy attack animation if the player
 // collides with the enemy without attacking. Plays
@@ -13,6 +11,8 @@ public class EnemyExplode : MonoBehaviour
 
     private void Awake()
     {
+        // Finds the player.
+
         player = GameObject.Find("Ellen");
     }
 

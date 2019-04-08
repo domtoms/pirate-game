@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -17,11 +15,8 @@ public class CreditsName : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Makes the text in the "nameObject" GameObject
-        // change to the text in the "nameText" string.
-
-        // Triggers the animation to make "nameObject"
-        // visible.
+        // Changes the text in the "nameObject" GameObject
+        // and makes "nameObject" visible.
 
         textVisible.SetBool("visible", true);
         GameObject.Find("name").GetComponent<Text>().text = nameText;

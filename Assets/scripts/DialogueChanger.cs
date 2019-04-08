@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 // This script will change the contents of the dialogue
-// box When the player collides with the hitbox of the
-// npc.
+// box When the player collides npc's hitbox.
 
 public class DialogueChanger : MonoBehaviour
 {
@@ -25,6 +22,8 @@ public class DialogueChanger : MonoBehaviour
 
     void Start()
     {
+        // Gets all the neccicary components.
+
         promptObject = GameObject.Find("!");
         promptAnimator = promptObject.GetComponent<Animator>();
         npcName = GameObject.Find("name").GetComponent<Text>();
@@ -34,9 +33,9 @@ public class DialogueChanger : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        // Sets the name text item in the dialogue box
-        // to "nameText"and the dialogue to "dialogueText"
-        // when the player collides with the hitbox.
+        // Sets the name to "nameText" and the dialogue
+        // to "dialogueText" when the player enters the
+        // npc's hitbox.
 
         if (col.tag == "Player")
         {
@@ -49,6 +48,8 @@ public class DialogueChanger : MonoBehaviour
 
     void OnTriggerExit(Collider col)
     {
+
+        // Hides dialogue prompt when the player walks away.
 
         if (col.tag == "Player")
         {

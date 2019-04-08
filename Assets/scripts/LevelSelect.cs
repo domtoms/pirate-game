@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// This script will load a level after it has been
-// selected in the level select screen. It will
-// load the level in the "levelID" string.
+// This script will load a level the level in
+// the "levelID" string.
 
 public class LevelSelect : MonoBehaviour {
 
@@ -14,16 +11,16 @@ public class LevelSelect : MonoBehaviour {
 
     public void LevelSelected()
     {
-        // This void will be triggered by the
-        // "clickonlevel" script.
+        // This void will be triggered by another
+        // script.
 
         FadeToScene(1);
     }
 
     public void FadeToScene(int levelIndex)
     {
-        // Plays the animation titled "fadeout"
-        // in the designated animatior.
+        // Triggers the "fadeout" trigger in
+        // the designated animator.
 
         animator.SetTrigger("fadeout");
     }

@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-// Sets the closeDialogue bool true.
+// Changes the closeDialogue bool.
 
 public class DialogueClose : MonoBehaviour
 {

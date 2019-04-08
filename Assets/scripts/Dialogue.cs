@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-// This script will oprn the dialogue box when the
-// player presses the "key" KeyCode in a trigger
-// marked "npc".
+// This script will open the dialogue box when the
+// player presses "key" in a trigger marked "npc".
 
 public class Dialogue : MonoBehaviour
 {
@@ -20,11 +17,14 @@ public class Dialogue : MonoBehaviour
 
     void Awake()
     {
+        // Gets the dialogue sound effect.
+
         source = GetComponent<AudioSource>();
     }
 
     // Makes the "prompt" GameObject invisible and closes
-    // the dialogue boxwhen the player exits the trigger.
+    // the dialogue box when the player exits the trigger.
+
     void OnTriggerExit(Collider col)
     {
 
@@ -45,8 +45,7 @@ public class Dialogue : MonoBehaviour
     }
 
     // Brings up the the "prompt" GameObject and allows the
-    // player to open and close the dialogue box with the "key"
-    // KeyCode when the player is in a trigger tagged "npc".
+    // player to open and close the dialogue box with "key".
 
     void Update()
     {

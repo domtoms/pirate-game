@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Allows the player to move the camera with the mouse.
 // Camera is locked by the "maxX" and "maxY" floats.
 
 public class CameraMovement : MonoBehaviour
 {
+    // Floats for the camera position.
 
     public float speed;
     public float maxX;

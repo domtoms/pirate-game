@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: 77f79a3ae378a504698bc858fe932c5a,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -222,8 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: levelselect
   animator: {fileID: 106714176}
-  key: 0
-  AnyKey: 1
+  anyKey: 1
 --- !u!95 &106714176
 Animator:
   serializedVersion: 3

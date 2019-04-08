@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,8 +19,7 @@ public class WaitToFade : MonoBehaviour
     IEnumerator wait()
     {
         // triggers the "FadeToScene" void after waiting
-        // for the amount of seconds designated in the
-        // "timer" float.
+        // for the designated duration.
 
         yield return new WaitForSeconds(timer);
         FadeToScene(1);

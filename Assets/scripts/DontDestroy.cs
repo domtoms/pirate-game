@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Moves the GameObject tagged "music" to the
-// "DontDestroyOnLoad" scene.
+// "DontDestroyOnLoad" scene and destroys duplicates.
 
 public class DontDestroy : MonoBehaviour
 {

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 // This script will add the key to the players inventory
@@ -27,6 +25,7 @@ public class KeyCollection : MonoBehaviour
 
         // Adds the "hud" sprite to the players hud and destroys
         // the "key" GameObject upon collision.
+
         if (col.tag == "key")
         {
             key.SetActive(false);
@@ -38,6 +37,7 @@ public class KeyCollection : MonoBehaviour
 
         // Changes the prompt to the "keyAcquired" or
         // "noKey" text based on the "keyInventory" bool.
+
         if (col.tag == "endtrigger")
         {
 
@@ -57,9 +57,9 @@ public class KeyCollection : MonoBehaviour
 
     }
 
-    // Triggers the level exit if the player presses the
-    // "exitKey" KeyCode in the exit level trigger with the
-    // "keyInventory" bool set to true.
+    // Triggers the level exit if the player presses "exitKey"
+    // in the exit trigger if the "keyInventory" bool is true.
+
     void OnTriggerStay(Collider col)
     {
 
@@ -74,6 +74,7 @@ public class KeyCollection : MonoBehaviour
 
     // Hides the exit level text when the player leaves
     // the trigger.
+
     void OnTriggerExit(Collider col)
     {
         if (col.tag == "endtrigger")

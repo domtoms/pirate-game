@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using NaughtyCharacter;
+﻿using UnityEngine;
 
 // Handles the players health and attacking.
 
