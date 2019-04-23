@@ -12,6 +12,7 @@ TagManager:
   - healthpickup
   - music
   - checkpoint
+  - ui
   layers:
   - Default
   - TransparentFX

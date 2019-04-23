@@ -9,6 +9,10 @@ public class NextLevel : MonoBehaviour
     public string nextLevel;
     public Animator animator;
     public GameObject player;
+    public GameObject playerCamera;
+    public GameObject cutsceneCamera;
+    public Animator endCutscene;
+    public Animator letterbox;
     public bool endLevel;
 
     public void LevelCompleted()
@@ -17,7 +21,15 @@ public class NextLevel : MonoBehaviour
         // "KeyCollection" script.
 
         endLevel = true;
-        FadeToScene(1);
+        Destroy(player);
+        Destroy(playerCamera);
+        cutsceneCamera.SetActive(true);
+        letterbox.SetBool("open", true);
+        endCutscene.SetTrigger("play");
+
+        GameObject[] UI = GameObject.FindGameObjectsWithTag("ui");
+        foreach (GameObject ui in UI)
+        GameObject.Destroy(ui);
     }
 
     public void FadeToScene(int levelIndex)
