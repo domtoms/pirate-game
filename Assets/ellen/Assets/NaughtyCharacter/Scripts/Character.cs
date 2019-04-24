@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace NaughtyCharacter
 {
+
     [System.Serializable]
     public class MovementSettings
     {
@@ -74,11 +75,15 @@ namespace NaughtyCharacter
         public Vector3 VerticalVelocity => _characterController.velocity.Multiply(0.0f, 1.0f, 0.0f);
         public bool IsGrounded { get; private set; }
 
+        public AudioClip jumpSound;
+        private AudioSource source;
+
         private void Awake()
         {
             _characterController = GetComponent<CharacterController>();
             _controller = GetComponent<Controller>();
             _characterAnimator = GetComponent<CharacterAnimator>();
+            source = GetComponent<AudioSource>();
         }
 
         private void Update()
@@ -160,6 +165,7 @@ namespace NaughtyCharacter
 
                 if (_jumpInput)
                 {
+                    source.PlayOneShot(jumpSound);
                     _verticalSpeed = MovementSettings.JumpSpeed;
                     IsGrounded = false;
                 }

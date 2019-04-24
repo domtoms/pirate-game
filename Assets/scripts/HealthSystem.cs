@@ -13,9 +13,18 @@ public class HealthSystem : MonoBehaviour
     public GameObject weapon;
     public bool attacking;
 
+    public AudioClip hurtSound;
+    public AudioClip deathSound;
+    public AudioClip attackSound;
+    public AudioClip healSound;
+
+    private AudioSource source;
+
+
     private void Awake()
     {
         player = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider col)
@@ -29,6 +38,7 @@ public class HealthSystem : MonoBehaviour
             if (health > 0)
             {
                 // Health subtraction.
+                source.PlayOneShot(hurtSound);
                 health -= 1;
                 healthBar.SetTrigger("loss");
             }
@@ -40,11 +50,17 @@ public class HealthSystem : MonoBehaviour
             }
         }
 
-        if (col.tag == "healthpickup" && health < 3)
+        if (col.tag == "healthpickup")
         {
-            //Health Restoration.
-            health += 1;
-            healthBar.SetTrigger("regen");
+            source.PlayOneShot(healSound);
+
+            if (health < 3)
+            {
+                //Health Restoration.
+                health += 1;
+                healthBar.SetTrigger("regen");
+            }
+
         }
 
         if (col.tag == "death")
@@ -72,6 +88,7 @@ public class HealthSystem : MonoBehaviour
     public void death()
     {
         // Triggers fadeout animation upon death.
+        source.PlayOneShot(deathSound);
         fade.SetTrigger("fadeout");
         Debug.Log("death");
 
@@ -80,6 +97,7 @@ public class HealthSystem : MonoBehaviour
     public void MeleeAttackStart()
     {
         // Begin Melee Attack.
+        source.PlayOneShot(attackSound);
         attacking = true;
         weapon.SetActive(true);
     }
