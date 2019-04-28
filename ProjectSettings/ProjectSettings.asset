@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Crows Nest Games
   productName: Treasure of the Seven Skies
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: d6ab59d1ea218cf438a21e2c9abd9f08, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -296,6 +296,11 @@ PlayerSettings:
       m_Icon: {fileID: 2800000, guid: e00550c48a70a2f489d01ac4a48a400e, type: 3}
       m_Width: 128
       m_Height: 128
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 269d949b5f15e9741a223db6f3e82b0b, type: 3}
+      m_Width: 64
+      m_Height: 64
       m_Kind: 0
     - serializedVersion: 2
       m_Icon: {fileID: 2800000, guid: 40f7a24944072c646bbbd0f46fd99365, type: 3}

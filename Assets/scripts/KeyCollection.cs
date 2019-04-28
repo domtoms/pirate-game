@@ -1,86 +1,69 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-// This script will add the key to the players inventory
-// and modify the trigger at the end of the level.
+// Allows the player to exit the level after collecting the key
 
 public class KeyCollection : MonoBehaviour
 {
-    public GameObject key;
-    public GameObject endLevel;
-    public bool keyInventory;
-    public Animator promptAnimator;
-    public Animator KeyHud;
+    public GameObject nextLevel;
+    public Animator prompt;
+    public Animator keyHud;
     public Text promptText;
-
-    [TextArea(3, 10)]
-    public string noKey;
-
-    [TextArea(3, 10)]
-    public string keyAcquired;
     public KeyCode exitKey;
+    [TextArea] public string noKey;
+    [TextArea] public string keyAcquired;
+    private bool keyInventory;
+    public AudioClip keySound;
+    private AudioSource source;
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     void OnTriggerEnter(Collider col)
     {
-
-        // Adds the "hud" sprite to the players hud and destroys
-        // the "key" GameObject upon collision.
-
+        // Adds the key sprite to the players hud
         if (col.tag == "key")
         {
-            key.SetActive(false);
             keyInventory = true;
-            KeyHud.SetBool("collected", true);
-
+            keyHud.SetBool("open", true);
+            source.PlayOneShot(keySound);
         }
 
-
-        // Changes the prompt to the "keyAcquired" or
-        // "noKey" text based on the "keyInventory" bool.
-
+        // Makes the prompt appear and changes the text
         if (col.tag == "endtrigger")
         {
-
-            promptAnimator.SetBool("open", true);
+            prompt.SetBool("open", true);
 
             if (keyInventory == true)
             {
                 promptText.text = keyAcquired;
             }
-
-            if (keyInventory == false)
+            else if (keyInventory == false)
             {
                 promptText.text = noKey;
             }
-
         }
-
     }
 
-    // Triggers the level exit if the player presses "exitKey"
-    // in the exit trigger if the "keyInventory" bool is true.
-
-    void OnTriggerStay(Collider col)
-    {
-
-        if (keyInventory == true && col.tag == "endtrigger" && Input.GetKeyDown(exitKey))
-        {
-            NextLevel transScript = endLevel.GetComponent<NextLevel>();
-            FindObjectOfType<NextLevel>().LevelCompleted();
-        }
-
-    }
-
-
-    // Hides the exit level text when the player leaves
-    // the trigger.
-
+    // Hides the prompt when the player leaves the trigger
     void OnTriggerExit(Collider col)
     {
         if (col.tag == "endtrigger")
         {
-            promptAnimator.SetBool("open", false);
+            prompt.SetBool("open", false);
         }
     }
 
+    // Allows the player press a key to exit the level
+    void OnTriggerStay(Collider col)
+    {
+        if (col.tag == "endtrigger" && keyInventory == true && Input.GetKeyDown(exitKey))
+        {
+            // Loads the next scene from a script in the endLevel GameObject
+            NextLevel transScript = nextLevel.GetComponent<NextLevel>();
+            FindObjectOfType<NextLevel>().LevelCompleted();
+        }
+    }
 }
