@@ -6,7 +6,7 @@
 public class CheckpointTrigger : MonoBehaviour
 {
     private Vector3 checkpoint;
-    private GameObject spawnScript;
+    private GameObject coordinates;
     public Animator prompt;
 
     void Start()
@@ -21,8 +21,8 @@ public class CheckpointTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
 
-            spawnScript = GameObject.Find("scripts");
-            SpawnCoordinates transScript = spawnScript.GetComponent<SpawnCoordinates>();
+            coordinates = GameObject.Find("scripts");
+            SpawnCoordinates transScript = coordinates.GetComponent<SpawnCoordinates>();
             
             // Sets the spawn coordinates to the checkpoints coordinates.
             if (transScript.spawnCoord != checkpoint)
