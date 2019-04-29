@@ -5,9 +5,15 @@
 
 public class CheckpointTrigger : MonoBehaviour
 {
-    public Vector3 checkpoint;
+    private Vector3 checkpoint;
     private GameObject spawnScript;
     public Animator prompt;
+
+    void Start()
+    {
+        // Find players starting coordinates
+        checkpoint = transform.position;
+    }
 
     void OnTriggerEnter(Collider col)
     {
