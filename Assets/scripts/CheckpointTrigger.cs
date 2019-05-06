@@ -11,7 +11,7 @@ public class CheckpointTrigger : MonoBehaviour
 
     void Start()
     {
-        // Find players starting coordinates
+        // Finds the checkpoints coordinates
         checkpoint = transform.position;
     }
 

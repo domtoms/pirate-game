@@ -13,6 +13,7 @@ TagManager:
   - music
   - checkpoint
   - ui
+  - coin
   layers:
   - Default
   - TransparentFX
