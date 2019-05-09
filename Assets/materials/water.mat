@@ -31,7 +31,7 @@ Material:
     - Vector1_DCF49CE2: 0
     - Vector1_E68A35AD: 2.5
     m_Colors:
-    - Color_92F5339: {r: 0.39215687, g: 0.78431374, b: 1, a: 1}
+    - Color_92F5339: {r: 2, g: 2, b: 2, a: 1}
     - Color_A7E1EC14: {r: 0.21568628, g: 0.78431374, b: 1, a: 1}
     - Color_FFC961BF: {r: 0, g: 2.2183743, b: 4.4367485, a: 1}
     - Vector2_EF28290F: {r: 0.5, g: 0.1, b: 0, a: 0}
