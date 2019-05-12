@@ -78,7 +78,7 @@ public class HealthSystem : MonoBehaviour
             death();
         }
 
-        if (Input.GetKeyDown(key) && attacking == false)
+        if (Input.GetKeyDown(key) && attacking == false && player.GetBool("IsGrounded"))
         {
             // Press the "key" KeyCode to attack.
             player.SetTrigger("Attack");
