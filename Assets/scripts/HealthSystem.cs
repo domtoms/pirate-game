@@ -53,6 +53,7 @@ public class HealthSystem : MonoBehaviour
         if (col.tag == "healthpickup")
         {
             source.PlayOneShot(healSound);
+            //Destroy(col);
 
             if (health < 3)
             {
