@@ -10,10 +10,12 @@ public class KeyCollection : MonoBehaviour
     public Animator keyHud;
     public Text promptText;
     public KeyCode exitKey;
+    public bool overExit;
     [TextArea] public string noKey;
     [TextArea] public string keyAcquired;
     private bool keyInventory;
     public AudioClip keySound;
+    public AudioClip checkpointSound;
     private AudioSource source;
 
     void Awake()
@@ -36,6 +38,8 @@ public class KeyCollection : MonoBehaviour
         {
             prompt.SetBool("open", true);
 
+            overExit = true;
+
             if (keyInventory == true)
             {
                 promptText.text = keyAcquired;
@@ -53,13 +57,19 @@ public class KeyCollection : MonoBehaviour
         if (col.tag == "endtrigger")
         {
             prompt.SetBool("open", false);
+            overExit = false;
         }
     }
 
-    // Allows the player press a key to exit the level
-    void OnTriggerStay(Collider col)
+    public void checkpoint()
     {
-        if (col.tag == "endtrigger" && keyInventory == true && Input.GetKeyDown(exitKey))
+        source.PlayOneShot(checkpointSound);
+    }
+
+    // Allows the player press a key to exit the level
+    void Update()
+    {
+        if (keyInventory == true && Input.GetKeyDown(exitKey) && overExit == true)
         {
             // Loads the next scene from a script in the endLevel GameObject
             NextLevel transScript = nextLevel.GetComponent<NextLevel>();

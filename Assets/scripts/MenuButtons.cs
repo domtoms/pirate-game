@@ -9,6 +9,7 @@ public class MenuButtons : MonoBehaviour
 
     public string levelName;
     public Animator animator;
+    public Animator ship;
 
     public void setSails()
     {

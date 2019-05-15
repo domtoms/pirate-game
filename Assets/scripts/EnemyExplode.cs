@@ -1,57 +1,62 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-// Plays the enemy attack animation if the player
-// collides with the enemy without attacking. Plays
-// the enemy death animation if the player is attacking.
-
 public class EnemyExplode : MonoBehaviour
 {
     public GameObject explosion;
     private GameObject player;
-    public bool death;
     private Animator enemy;
+    private bool death;
 
-    private void Awake()
+    void Awake()
     {
-        // Finds the player.
-
+        // Finds player and enemy animator
         player = GameObject.Find("Ellen");
         enemy = GetComponent<Animator>();
     }
 
     void Update()
     {
+
+        // Begone!
         if (death == true)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime*25);
+            transform.Translate(Vector3.forward * Time.deltaTime * 30);
         }
     }
 
     void OnTriggerEnter(Collider col)
     {
-        // Gets the health system script.
+        // Gets the health system
         HealthSystem transScript = player.GetComponent<HealthSystem>();
 
+        // Enemy explodes and hurts player
         if (col.tag == "Player" && transScript.attacking == false)
         {
-            // Enemy attack animation.
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
 
+        // Enemy flies off into the sunset and dies
         if (col.tag == "Player" && transScript.attacking == true)
         {
-            // Enemy death animation.
+            // Activates death mode
             death = true;
-            var euler = transform.eulerAngles;
-            euler.y = Random.Range(0f, 360f);
+
+            // Changes enemy rotation
+            Vector3 euler = transform.eulerAngles;
+            euler.y = Random.Range(player.transform.eulerAngles.y -35f, player.transform.eulerAngles.y +35f);
             transform.eulerAngles = euler;
+            Debug.Log("enemy rotation " + euler);
+
+            //transform.eulerAngles = new Vector3(0f, player.transform.eulerAngles.y, 0f);
+
+            // Disable enemy AI
             this.GetComponent<EnemyController>().enabled = false;
-            this.GetComponent<SphereCollider>().enabled = false;
             this.GetComponent<NavMeshAgent>().enabled = false;
+
+            // Trigger death animation
             enemy.SetTrigger("dies");
-            //Destroy(gameObject);
         }
     }
 }

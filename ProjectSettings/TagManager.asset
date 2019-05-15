@@ -14,6 +14,7 @@ TagManager:
   - checkpoint
   - ui
   - coin
+  - level
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - 
   - PostProcessing
   - Transparent
-  - 
+  - ship
   - 
   - 
   - 

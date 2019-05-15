@@ -11,7 +11,7 @@ public class EndCutscene : MonoBehaviour
 
     void takeoff()
     {
-        cutsceneCamera = GameObject.Find("endcutscene");
+        cutsceneCamera = GameObject.Find("endcamera");
         source = cutsceneCamera.GetComponent<AudioSource>();
         source.PlayOneShot(takeoffSound);
     }
