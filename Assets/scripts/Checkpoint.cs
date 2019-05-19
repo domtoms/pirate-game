@@ -4,22 +4,27 @@ using NaughtyCharacter;
 // Sets the players coordinates a the "spawn" Vector3
 // when the scene begins.
 
-
 public class Checkpoint : MonoBehaviour
 {
     private GameObject player;
     private Vector3 spawn;
     private Vector3 rotation;
     private GameObject coordinates;
+    private GameObject keyHud;
+    private Animator keyAnimator;
+    private GameObject key;
 
     void Awake()
     {
-        // Moves the players coordinates.
 
         Debug.Log("reset");
 
         player = GameObject.Find("Ellen");
         coordinates = GameObject.Find("scripts");
+        key = GameObject.Find("key");
+        keyHud = GameObject.Find("keyhud");
+
+        keyAnimator = keyHud.GetComponent<Animator>();
 
         SpawnCoordinates spawnScript = coordinates.GetComponent<SpawnCoordinates>();
         spawn = spawnScript.spawnCoord;
@@ -31,6 +36,14 @@ public class Checkpoint : MonoBehaviour
         player.transform.position = new Vector3(spawn.x, spawn.y, spawn.z);
         player.transform.eulerAngles = new Vector3(0, rotation.y, 0);
         player.GetComponent<CharacterController>().enabled = true;
+
+        if (spawnScript.key == true)
+        {
+            KeyCollection keyScript = player.GetComponent<KeyCollection>();
+            keyScript.keyInventory = true;
+            keyAnimator.SetTrigger("respawn");
+            Destroy(key);
+        }
 
     }
 }

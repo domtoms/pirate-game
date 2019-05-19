@@ -11,12 +11,23 @@ public class DialogueChanger : MonoBehaviour
     private Text npcName;
     private Text dialogue;
     private Vector3 location;
+    public bool missingEye;
+
+    public Animator questHeadline;
+    public Text questText;
+    
+    private GameObject player;
 
     public float height = 2.2f;
+
     public string nameText;
+    public string missingEyeNameText;
 
     [TextArea(3, 10)]
     public string dialogueText;
+
+    [TextArea(3, 10)]
+    public string missingEyeDialogue;
 
     public GameObject npc;
 
@@ -29,6 +40,7 @@ public class DialogueChanger : MonoBehaviour
         npcName = GameObject.Find("name").GetComponent<Text>();
         dialogue = GameObject.Find("dialogue").GetComponent<Text>();
         location = npc.transform.position;
+        player = GameObject.Find("Ellen");
     }
 
     void OnTriggerEnter(Collider col)
@@ -39,9 +51,19 @@ public class DialogueChanger : MonoBehaviour
 
         if (col.tag == "Player")
         {
+            KeyCollection transScript = player.GetComponent<KeyCollection>();
+
+            if (missingEye == true && transScript.eye == true)
+            {
+                npcName.text = missingEyeNameText;
+                dialogue.text = missingEyeDialogue;
+            }else
+            {
+                npcName.text = nameText;
+                dialogue.text = dialogueText;
+            }
+
             promptObject.transform.position = new Vector3(location.x,location.y+height,location.z);
-            npcName.text = nameText;
-            dialogue.text = dialogueText;
             promptAnimator.SetBool("open", true);
         }
     }
@@ -54,6 +76,16 @@ public class DialogueChanger : MonoBehaviour
         if (col.tag == "Player")
         {
             promptAnimator.SetBool("open", false);
+
+            KeyCollection transScript = player.GetComponent<KeyCollection>();
+
+            /*
+            if (missingEye == true && transScript.eye == false)
+            {
+                questHeadline.SetTrigger("visible");
+                questText.text = "Find One Eyed Bill's eye!";
+            }
+            */
         }
 
     }

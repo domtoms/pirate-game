@@ -15,6 +15,7 @@ TagManager:
   - ui
   - coin
   - level
+  - eye
   layers:
   - Default
   - TransparentFX

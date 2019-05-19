@@ -25,6 +25,11 @@ public class EnemyExplode : MonoBehaviour
         }
     }
 
+    void rip()
+    {
+        Destroy(gameObject);
+    }
+
     void OnTriggerEnter(Collider col)
     {
         // Gets the health system

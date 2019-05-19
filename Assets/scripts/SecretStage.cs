@@ -14,9 +14,9 @@ public class SecretStage : MonoBehaviour
         if (secretStage == true && Input.GetKey(KeyCode.H) && Input.GetKey(KeyCode.O) && Input.GetKey(KeyCode.N))
         {
 
-            LevelSelect transScript = selected.GetComponent<LevelSelect>();
-            transScript.levelID = "honey";
-            FindObjectOfType<LevelSelect>().LevelSelected();
+            MenuButtons transScript = selected.GetComponent<MenuButtons>();
+            transScript.levelName = "honey";
+            FindObjectOfType<MenuButtons>().FadeToScene(1);
         }
     }
 }

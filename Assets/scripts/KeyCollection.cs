@@ -8,15 +8,17 @@ public class KeyCollection : MonoBehaviour
     public GameObject nextLevel;
     public Animator prompt;
     public Animator keyHud;
+    public Animator eyeHud;
     public Text promptText;
     public KeyCode exitKey;
     public bool overExit;
     [TextArea] public string noKey;
     [TextArea] public string keyAcquired;
-    private bool keyInventory;
+    public bool keyInventory;
     public AudioClip keySound;
     public AudioClip checkpointSound;
     private AudioSource source;
+    public bool eye;
 
     void Awake()
     {
@@ -30,6 +32,13 @@ public class KeyCollection : MonoBehaviour
         {
             keyInventory = true;
             keyHud.SetBool("open", true);
+            source.PlayOneShot(keySound);
+        }
+
+        if (col.tag == "eye")
+        {
+            eye = true;
+            eyeHud.SetBool("open", true);
             source.PlayOneShot(keySound);
         }
 

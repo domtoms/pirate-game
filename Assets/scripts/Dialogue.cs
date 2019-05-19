@@ -58,6 +58,7 @@ public class Dialogue : MonoBehaviour
         if (Input.GetKeyDown(key) && closeDialogue == true && IsOver == true)
         {
             dialogueAnimation.SetBool("open", false);
+
         }
     }
 }
