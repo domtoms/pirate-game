@@ -7,6 +7,16 @@ public class MenuFlyAway : MonoBehaviour
     public GameObject fade;
     private Animator ship;
 
+
+    private void Update()
+    {
+        if (Input.anyKey)
+        {
+            flyAway();
+        }
+    }
+
+
     private void Awake()
     {
         ship = GetComponent<Animator>();

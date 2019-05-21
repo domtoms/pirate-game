@@ -8877,8 +8877,98 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: LEG_GREEN
+    second: {fileID: 2100000, guid: 4b070d1003070b2469fdffa411b76151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nut_2
+    second: {fileID: 2100000, guid: d22d83a605ace7147bfbe8500f6dd3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: back_pack_1
+    second: {fileID: 2100000, guid: 43fda2042abd5d84ca3af8d2b2a64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belt_buckle
+    second: {fileID: 2100000, guid: d22d83a605ace7147bfbe8500f6dd3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 43fda2042abd5d84ca3af8d2b2a64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boot_brown
+    second: {fileID: 2100000, guid: b78ceee554bbe7747a07fa90b3f06ebe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boot_dark_brown
+    second: {fileID: 2100000, guid: 4b070d1003070b2469fdffa411b76151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: goggle_green
+    second: {fileID: 2100000, guid: 78da9aef447c4544580c27f68bc041d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: 29f82389a5062b140bdda3d49d47bc7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: 43fda2042abd5d84ca3af8d2b2a64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: helmet
     second: {fileID: 2100000, guid: 78da9aef447c4544580c27f68bc041d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jacket_red
+    second: {fileID: 2100000, guid: 1a71e177f28964d4c9ad16f9351109b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: 43fda2042abd5d84ca3af8d2b2a64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nut
+    second: {fileID: 2100000, guid: d22d83a605ace7147bfbe8500f6dd3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oxegen_tank_1
+    second: {fileID: 2100000, guid: 29f82389a5062b140bdda3d49d47bc7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oxegen_tank_2
+    second: {fileID: 2100000, guid: 29f82389a5062b140bdda3d49d47bc7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt_sand
+    second: {fileID: 2100000, guid: 9943b6b774c93444f805668ab40a4737, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 9bfa736fe10ccd54ab6aee307b5612ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: e7e67d5ed74cade45a020251921a4908, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

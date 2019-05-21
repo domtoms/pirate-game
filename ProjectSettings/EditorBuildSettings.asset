@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/scenes/lore.unity
     guid: 35a95f1bb255d714f936623a7cde21fb
   - enabled: 1
-    path: Assets/scenes/levelselect.unity
-    guid: a1a4cb6040f22e44c89194261e94fea3
-  - enabled: 1
     path: Assets/scenes/hometown.unity
     guid: 77d60551a2937c14e9f398515782a116
+  - enabled: 1
+    path: Assets/scenes/credits.unity
+    guid: 287421c71ff895f4f94345db8f1c0605
   - enabled: 1
     path: Assets/scenes/honey.unity
     guid: 8264c07f888f6a94ea1f748ca7b3087b

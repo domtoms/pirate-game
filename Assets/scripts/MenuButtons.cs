@@ -9,11 +9,18 @@ public class MenuButtons : MonoBehaviour
 
     public string levelName;
     public Animator animator;
-    public Animator ship;
+    //public Animator ship;
+
+
+    public void letTheAdventureBegin()
+    {
+        levelName = "intro";
+        FadeToScene(1);
+    }
 
     public void setSails()
     {
-        levelName = "intro";
+        levelName = "menu";
         FadeToScene(1);
     }
 

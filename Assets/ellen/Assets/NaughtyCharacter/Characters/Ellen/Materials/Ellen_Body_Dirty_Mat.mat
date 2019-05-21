@@ -8,8 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ellen_Body_Dirty_Mat
-  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: -6465566751694194690, guid: 5b24bc98cf7d05e439280c0751409840,
+    type: 3}
+  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +20,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_1C40B0A6:
+        m_Texture: {fileID: 2800000, guid: 9039829e91b883842a8c3ce78845565e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_25C86992:
+        m_Texture: {fileID: 2800000, guid: 616bd08975e2f8640aa67f0800697c87, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_3ECB2165:
+        m_Texture: {fileID: 2800000, guid: 9039829e91b883842a8c3ce78845565e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_97F4A6B8:
+        m_Texture: {fileID: 2800000, guid: 616bd08975e2f8640aa67f0800697c87, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 3f13fc152adc4684a93003f7ed55a6fe, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -68,7 +85,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 0.9
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossinessSource: 0
     - _GlossyReflections: 1
     - _Metallic: 0
@@ -87,6 +104,16 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_BD08E197: {r: 0, g: 0, b: 0, a: 0}
+    - Color_C65DD713: {r: 1, g: 1, b: 1, a: 0}
+    - Vector2_1EE1B1CF: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_44423F18: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_8C15A04D: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_B3FEE896: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1.545, g: 1.545, b: 1.545, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _WorldLightPos0: {r: -0.5, g: 0.5, b: 0.5, a: 0}
+    - _WorldLightPos0_1: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _WorldSpaceLightPos0_: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _celLightDirection: {r: 0.5, g: 0.5, b: 0, a: 0}

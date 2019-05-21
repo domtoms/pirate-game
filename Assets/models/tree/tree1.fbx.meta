@@ -3,7 +3,27 @@ guid: 3f901418ebdaa8c428aab68562851dfd
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WOOD
+    second: {fileID: 2100000, guid: 3816e1f1f997a3f41b270d9f851cbb7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__LEG_GREEN
+    second: {fileID: 2100000, guid: cfcbaf84f2967a741a3fd2e90ebd5ac4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__WOOD
+    second: {fileID: 2100000, guid: 3816e1f1f997a3f41b270d9f851cbb7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_green
+    second: {fileID: 2100000, guid: cfcbaf84f2967a741a3fd2e90ebd5ac4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -33,7 +53,11 @@ ModelImporter:
     clipAnimations: []
     isReadable: 0
   meshes:
-    lODScreenPercentages: []
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
     globalScale: 1
     meshCompression: 0
     addColliders: 0
