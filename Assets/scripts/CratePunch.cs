@@ -6,6 +6,10 @@ public class CratePunch : MonoBehaviour
     private Rigidbody rb;
     private Vector3 pos;
 
+    public float force;
+    public float radius;
+    public float upwards;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,20 +18,30 @@ public class CratePunch : MonoBehaviour
     }
 
     // Update is called once per frame
+    void OnTriggerStay(Collider col)
+    {
+        HealthSystem transScript = player.GetComponent<HealthSystem>();
+
+        if (col.tag == "Player" && transScript.attacking == true)
+        {
+            punch();
+        }
+    }
+
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Player")
+        if (col.tag == "death")
         {
-            pos = player.transform.position;
-            punch();
+            Destroy(gameObject);
         }
     }
 
     void punch()
     {
-        if (rb != null)
+        if (rb.velocity.y == 0f && rb.velocity.x == 0f && rb.velocity.y == 0f)
         {
-            rb.AddExplosionForce(25f, pos, 10f, 10f, ForceMode.VelocityChange);
+            pos = player.transform.position;
+            rb.AddExplosionForce(force, pos, radius, upwards, ForceMode.VelocityChange);
         }
     }
 }
