@@ -52,11 +52,14 @@ public class DialogueChanger : MonoBehaviour
         if (col.tag == "Player")
         {
             KeyCollection transScript = player.GetComponent<KeyCollection>();
+            Dialogue dialogueScript = player.GetComponent<Dialogue>();
 
             if (missingEye == true && transScript.eye == true)
             {
                 npcName.text = missingEyeNameText;
                 dialogue.text = missingEyeDialogue;
+                dialogueScript.overMissingEye = true;
+
             }else
             {
                 npcName.text = nameText;
@@ -79,13 +82,12 @@ public class DialogueChanger : MonoBehaviour
 
             KeyCollection transScript = player.GetComponent<KeyCollection>();
 
-            /*
-            if (missingEye == true && transScript.eye == false)
+            if (missingEye == true)
             {
-                questHeadline.SetTrigger("visible");
-                questText.text = "Find One Eyed Bill's eye!";
+                Dialogue dialogueScript = player.GetComponent<Dialogue>();
+                dialogueScript.overMissingEye = false;
+
             }
-            */
         }
 
     }

@@ -3,6 +3,7 @@
 public class CratePunch : MonoBehaviour
 {
     private GameObject player;
+    private Animator playerAnimator;
     private Rigidbody rb;
     private Vector3 pos;
 
@@ -14,15 +15,16 @@ public class CratePunch : MonoBehaviour
     void Awake()
     {
         player = GameObject.Find("Ellen");
+        playerAnimator = player.GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void OnTriggerStay(Collider col)
     {
-        HealthSystem transScript = player.GetComponent<HealthSystem>();
+        //HealthSystem transScript = player.GetComponent<HealthSystem>();
 
-        if (col.tag == "Player" && transScript.attacking == true)
+        if (col.tag == "Player" && playerAnimator.GetBool("Attack"))
         {
             punch();
         }

@@ -7,11 +7,12 @@ public class HealthSystem : MonoBehaviour
     public float health;
     public Animator healthBar;
     public Animator fade;
+    public Animator pauseMenu;
 
-    public KeyCode key;
+    //public KeyCode key;
     private Animator player;
-    public GameObject weapon;
-    public bool attacking;
+    //public GameObject weapon;
+    //public bool attacking;
 
     public AudioClip hurtSound;
     public AudioClip deathSound;
@@ -33,7 +34,7 @@ public class HealthSystem : MonoBehaviour
         // Handles players health on collision with
         // and enemy when not attacking.
 
-        if (col.tag == "enemy" && health > 0 && attacking == false)
+        if (col.tag == "enemy" && health > 0 && player.GetBool("Attack") == false)
         {
             if (health > 0)
             {
@@ -73,16 +74,13 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("x"))
-        {
-            // Press "x" to commit suicide.
-            death();
-        }
 
-        if (Input.GetKeyDown(key) && attacking == false && player.GetBool("IsGrounded"))
+        if (Input.GetKeyDown(KeyCode.Z) && player.GetBool("Attack") == false && player.GetBool("IsGrounded")
+            || Input.GetKeyDown(KeyCode.Mouse0) && player.GetBool("Attack") == false && player.GetBool("IsGrounded") && pauseMenu.GetBool("open") == false)
         {
             // Press the "key" KeyCode to attack.
-            player.SetTrigger("Attack");
+            player.SetBool("Attack", true);
+            source.PlayOneShot(attackSound);
         }
     }
 
@@ -92,22 +90,11 @@ public class HealthSystem : MonoBehaviour
         source.PlayOneShot(deathSound);
         fade.SetTrigger("fadeout");
         Debug.Log("death");
-
-    }
-
-    public void MeleeAttackStart()
-    {
-        // Begin Melee Attack.
-        source.PlayOneShot(attackSound);
-        attacking = true;
-        weapon.SetActive(true);
     }
 
     public void MeleeAttackEnd()
     {
-        // End Melee Attack.
-        attacking = false;
-        weapon.SetActive(false);
+        player.SetBool("Attack", false);
     }
 
 }

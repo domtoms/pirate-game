@@ -5,35 +5,37 @@ using NaughtyCharacter;
 
 public class Pause : MonoBehaviour
 {
-    public bool paused;
     public KeyCode key;
-    public GameObject pauseMenu;
-    public GameObject player;
+    public Animator pauseMenu;
 
     void Update()
     {
         if (Input.GetKeyDown(key))
         {
-            if (paused)
+            if (pauseMenu.GetBool("open") == true)
             {
-                // Resume
-                paused = false;
-                pauseMenu.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                Time.timeScale = 1f;
-                player.GetComponent<Character>().enabled = true;
+                resume();
             }
-            else
+            else if (pauseMenu.GetBool("open") == false)
             {
-                // Pause
-                paused = true;
-                pauseMenu.SetActive(true);
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                Time.timeScale = 0f;
-                player.GetComponent<Character>().enabled = false;
+                pause();
             }
         }
+    }
+
+    public void resume()
+    {
+        //paused = false;
+        pauseMenu.SetBool("open", false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void pause()
+    {
+        //paused = true;
+        pauseMenu.SetBool("open", true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

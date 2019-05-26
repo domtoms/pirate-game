@@ -41,7 +41,7 @@ public class Checkpoint : MonoBehaviour
         {
             KeyCollection keyScript = player.GetComponent<KeyCollection>();
             keyScript.keyInventory = true;
-            keyAnimator.SetTrigger("respawn");
+            keyAnimator.SetBool("open", true);
             Destroy(key);
         }
 

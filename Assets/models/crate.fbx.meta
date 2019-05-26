@@ -3,7 +3,42 @@ guid: 4d93e9409827fa84aa1aa87cc2450962
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_SIDES
+    second: {fileID: 2100000, guid: 3816e1f1f997a3f41b270d9f851cbb7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_lambert3
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_pasted__lambert3
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_pasted__lambert4
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_pasted__lambert5
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_pasted__pasted__lambert3
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_AND_BARREL_sides
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

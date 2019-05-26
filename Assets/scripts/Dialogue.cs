@@ -8,8 +8,11 @@ public class Dialogue : MonoBehaviour
 
     public GameObject dialogueBox;
     public Animator dialogueAnimation;
+    public Animator eyeAnimator;
     public KeyCode key;
     public AudioClip speechSound;
+
+    public bool overMissingEye;
 
     public bool closeDialogue;
     private bool IsOver;
@@ -53,6 +56,13 @@ public class Dialogue : MonoBehaviour
         {
             source.PlayOneShot(speechSound);
             dialogueAnimation.SetBool("open", true);
+
+            KeyCollection eyeScript = this.GetComponent<KeyCollection>();
+
+            if (overMissingEye == true)
+            {
+                eyeAnimator.SetBool ("open", false);
+            }
         }
 
         if (Input.GetKeyDown(key) && closeDialogue == true && IsOver == true)

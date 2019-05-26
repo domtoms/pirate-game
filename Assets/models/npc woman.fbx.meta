@@ -7,8 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 43fda2042abd5d84ca3af8d2b2a64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boots_botom
+    second: {fileID: 2100000, guid: b78ceee554bbe7747a07fa90b3f06ebe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boots_main
+    second: {fileID: 2100000, guid: 4b070d1003070b2469fdffa411b76151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__gold_pads
+    second: {fileID: 2100000, guid: d22d83a605ace7147bfbe8500f6dd3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__gold_pads1
+    second: {fileID: 2100000, guid: 78da9aef447c4544580c27f68bc041d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: pasted__helmet1
     second: {fileID: 2100000, guid: 78da9aef447c4544580c27f68bc041d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 9bfa736fe10ccd54ab6aee307b5612ce, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
