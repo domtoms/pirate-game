@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using NaughtyCharacter;
 
 // Allows the player to exit the level after collecting the key
 
@@ -23,6 +24,8 @@ public class KeyCollection : MonoBehaviour
     void Awake()
     {
         source = GetComponent<AudioSource>();
+
+        source = this.GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider col)

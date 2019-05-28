@@ -6,40 +6,37 @@ using NaughtyCharacter;
 public class HealthSystem : MonoBehaviour
 {
     public float health;
+
     public Animator healthBar;
     public Animator fade;
     public Animator pauseMenu;
-
-    //public KeyCode key;
     private Animator player;
-    //public GameObject weapon;
-    //public bool attacking;
 
     public AudioClip hurtSound;
     public AudioClip deathSound;
     public AudioClip attackSound;
     public AudioClip healSound;
+    public AudioClip dockMusic;
+    public AudioClip narutoOP;
 
-    private GameObject scripts;
     private AudioSource source;
     private AudioSource music;
 
-    public AudioClip narutoOP;
-    public AudioClip dockMusic;
+    private GameObject scriptsBlock;
 
     public bool narutoMode;
 
 
-    private void Awake()
+    void Awake()
     {
-        player = GetComponent<Animator>();
-        source = GetComponent<AudioSource>();
+        player = this.GetComponent<Animator>();
+        source = this.GetComponent<AudioSource>();
 
-        scripts = GameObject.Find("scripts");
-        music = scripts.GetComponent<AudioSource>();
+        scriptsBlock = GameObject.Find("scripts");
+        music = scriptsBlock.GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter(Collider col)
+    public void OnTriggerEnter(Collider col)
     {
 
         // Handles players health on collision with
@@ -76,13 +73,14 @@ public class HealthSystem : MonoBehaviour
 
         }
 
-        if (col.tag == "naruto")
+        if (col.tag == "fuckingnarutopickup")
         {
-            source.PlayOneShot(healSound);
-            player.SetBool("naruto", true);
+
+            scriptsBlock = GameObject.Find("scripts");
+
+            music = scriptsBlock.GetComponent<AudioSource>();
 
             Character speedScript = this.GetComponent<Character>();
-
 
             speedScript.MovementSettings.Acceleration = 50f;
             speedScript.MovementSettings.Decceleration = 50f;
@@ -97,6 +95,8 @@ public class HealthSystem : MonoBehaviour
 
             music.Play();
 
+            source.PlayOneShot(healSound);
+            player.SetBool("naruto", true);
         }
 
         if (col.tag == "death")
@@ -106,7 +106,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Z) && player.GetBool("Attack") == false && player.GetBool("IsGrounded")
@@ -125,12 +125,15 @@ public class HealthSystem : MonoBehaviour
         fade.SetTrigger("fadeout");
         Debug.Log("death");
 
+
         if (narutoMode == true)
         {
             music.clip = dockMusic;
             music.Play();
         }
+
     }
+
 
     public void MeleeAttackEnd()
     {
