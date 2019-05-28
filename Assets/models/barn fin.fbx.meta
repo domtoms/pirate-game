@@ -6,7 +6,347 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__lambert3
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert11
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert12
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert21
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert22
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert23
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__lambert24
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert12
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert35
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert37
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert39
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert41
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert43
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert45
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert50
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert73
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__lambert74
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert102
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert114
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert13
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert38
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert50
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert62
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert75
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert77
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert79
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert82
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert84
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert86
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert88
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert112
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert31
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert45
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert59
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert73
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert83
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert85
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert87
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert98
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert36
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE54
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE100
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE101
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE118
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE136
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE41
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE59
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE77
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE106
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE107
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE124
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE143
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE144
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE166
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE167
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE17
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE60
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE61
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE83
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE84
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE112
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE19
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE20
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE51
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE65
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE79
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__phongE98
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__pasted__pasted__phongE14
+    second: {fileID: 2100000, guid: 8bca5d4d9c0062744be878710cf47fca, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

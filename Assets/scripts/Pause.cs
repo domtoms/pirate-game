@@ -6,11 +6,12 @@ using NaughtyCharacter;
 public class Pause : MonoBehaviour
 {
     public KeyCode key;
+    public bool lockPause;
     public Animator pauseMenu;
 
     void Update()
     {
-        if (Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key) && lockPause == false)
         {
             if (pauseMenu.GetBool("open") == true)
             {

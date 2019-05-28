@@ -17,6 +17,8 @@ TagManager:
   - level
   - eye
   - mute
+  - ship
+  - naruto
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - PostProcessing
   - Transparent
   - ship
-  - 
+  - cameracollider
   - 
   - 
   - 

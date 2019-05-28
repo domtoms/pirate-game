@@ -23,7 +23,7 @@ public class EnemyExplode : MonoBehaviour
         // Begone!
         if (death == true)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * 30);
+            transform.Translate(Vector3.back * Time.deltaTime * 30);
         }
     }
 
@@ -52,7 +52,7 @@ public class EnemyExplode : MonoBehaviour
 
             // Changes enemy rotation
             Vector3 euler = transform.eulerAngles;
-            euler.y = Random.Range(player.transform.eulerAngles.y -35f, player.transform.eulerAngles.y +35f);
+            euler.y = Random.Range(player.transform.eulerAngles.y +145f, player.transform.eulerAngles.y +215f);
             transform.eulerAngles = euler;
             Debug.Log("enemy rotation " + euler);
 

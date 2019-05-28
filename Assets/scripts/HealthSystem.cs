@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using NaughtyCharacter;
 
 // Handles the players health and attacking.
 
@@ -19,13 +20,23 @@ public class HealthSystem : MonoBehaviour
     public AudioClip attackSound;
     public AudioClip healSound;
 
+    private GameObject scripts;
     private AudioSource source;
+    private AudioSource music;
+
+    public AudioClip narutoOP;
+    public AudioClip dockMusic;
+
+    public bool narutoMode;
 
 
     private void Awake()
     {
         player = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
+
+        scripts = GameObject.Find("scripts");
+        music = scripts.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider col)
@@ -65,6 +76,29 @@ public class HealthSystem : MonoBehaviour
 
         }
 
+        if (col.tag == "naruto")
+        {
+            source.PlayOneShot(healSound);
+            player.SetBool("naruto", true);
+
+            Character speedScript = this.GetComponent<Character>();
+
+
+            speedScript.MovementSettings.Acceleration = 50f;
+            speedScript.MovementSettings.Decceleration = 50f;
+
+            speedScript.MovementSettings.MaxHorizontalSpeed = 15f;
+            speedScript.MovementSettings.JumpSpeed = 15f;
+            speedScript.MovementSettings.JumpAbortSpeed = 15f;
+
+            music.clip = narutoOP;
+
+            narutoMode = true;
+
+            music.Play();
+
+        }
+
         if (col.tag == "death")
         {
             // Instant death collider.
@@ -90,6 +124,12 @@ public class HealthSystem : MonoBehaviour
         source.PlayOneShot(deathSound);
         fade.SetTrigger("fadeout");
         Debug.Log("death");
+
+        if (narutoMode == true)
+        {
+            music.clip = dockMusic;
+            music.Play();
+        }
     }
 
     public void MeleeAttackEnd()

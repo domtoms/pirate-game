@@ -15,6 +15,13 @@ public class NextLevel : MonoBehaviour
     public Animator letterbox;
     public bool endLevel;
 
+    public GameObject pauseMenu;
+    public Animator pauseAnimator;
+
+    public GameObject lod1;
+    public GameObject lod2;
+    public GameObject lod3;
+
     public void LevelCompleted()
     {
         // This void will be triggered by the
@@ -30,6 +37,20 @@ public class NextLevel : MonoBehaviour
         GameObject[] UI = GameObject.FindGameObjectsWithTag("ui");
         foreach (GameObject ui in UI)
         GameObject.Destroy(ui);
+        GameObject.Destroy(lod1);
+        GameObject.Destroy(lod2);
+        GameObject.Destroy(lod3);
+
+        Pause transscript = pauseMenu.GetComponent<Pause>();
+
+        transscript.lockPause = true;
+
+        if (pauseAnimator.GetBool("open") == true)
+        {
+            pauseAnimator.SetBool("open", false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     public void FadeToScene(int levelIndex)
@@ -61,5 +82,12 @@ public class NextLevel : MonoBehaviour
 
             SceneManager.LoadScene(nextLevel);
         }
+    }
+
+    public void exitToMenu(int levelIndex)
+    {
+        nextLevel = "menu";
+        endLevel = true;
+        animator.SetTrigger("fadeout");
     }
 }

@@ -6,12 +6,17 @@ public class MenuFlyAway : MonoBehaviour
 {
     public GameObject fade;
     private Animator ship;
+    public AudioSource audioSource;
+    public AudioClip soundFX;
+    private bool takeoff;
 
 
     private void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKeyDown && takeoff == false)
         {
+            audioSource.PlayOneShot(soundFX);
+            takeoff = true;
             flyAway();
         }
     }
